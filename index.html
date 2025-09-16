@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janani Mukkoti - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">Janani Mukkoti</h1>
+                <nav class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search projects, skills..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button class="resume-btn" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Resume
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Building Tomorrow's Solutions</h1>
+            <p class="hero-subtitle">Computer Science Master's Student at Clemson University</p>
+            <p class="hero-description">Aspiring Data Analyst & Software Developer passionate about turning complex problems into elegant solutions</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('projects')">
+                    <i class="fas fa-play"></i> View Projects
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('about')">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </button>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Education Section -->
+        <section class="content-row" id="education">
+            <div class="row-header">
+                <h2 class="row-title">🎓 Education</h2>
+                <div class="row-controls">
+                    <button class="scroll-btn scroll-left" onclick="scrollRow('education', 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" onclick="scrollRow('education', 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cards-container" id="education-cards">
+                <div class="card" data-category="education">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Clemson+University" alt="Clemson University">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Master's in Computer Science</h3>
+                        <p class="card-description">Clemson University • 2023-2025</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Master of Science in Computer Science</h4>
+                        <p><strong>Institution:</strong> Clemson University</p>
+                        <p><strong>Duration:</strong> 2023 - 2025 (Expected)</p>
+                        <p><strong>Focus Areas:</strong> Data Science, Machine Learning, Software Engineering</p>
+                        <p><strong>Relevant Coursework:</strong> Advanced Algorithms, Data Mining, Database Systems, Software Engineering</p>
+                        <p><strong>GPA:</strong> 3.8/4.0</p>
+                    </div>
+                </div>
+                <div class="card" data-category="education">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Bachelor's+Degree" alt="Bachelor's Degree">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Bachelor's in Computer Science</h3>
+                        <p class="card-description">Graduated with Honors • 2019-2023</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p><strong>Duration:</strong> 2019 - 2023</p>
+                        <p><strong>Achievements:</strong> Magna Cum Laude, Dean's List</p>
+                        <p><strong>Core Subjects:</strong> Data Structures, Algorithms, Database Design, Web Development</p>
+                        <p><strong>Final Project:</strong> Developed a machine learning model for predictive analytics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="content-row" id="projects">
+            <div class="row-header">
+                <h2 class="row-title">💻 Projects</h2>
+                <div class="row-controls">
+                    <button class="scroll-btn scroll-left" onclick="scrollRow('projects', 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" onclick="scrollRow('projects', 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cards-container" id="projects-cards">
+                <div class="card featured" data-category="projects">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=E-Commerce+Platform" alt="E-Commerce Platform">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">E-Commerce Analytics Platform</h3>
+                        <p class="card-description">Full-stack application with real-time analytics</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>E-Commerce Analytics Platform</h4>
+                        <p><strong>Tech Stack:</strong> React, Node.js, MongoDB, D3.js</p>
+                        <p><strong>Description:</strong> Built a comprehensive e-commerce platform with real-time sales analytics, inventory management, and customer insights dashboard.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Real-time sales tracking and visualization</li>
+                            <li>Machine learning-based product recommendations</li>
+                            <li>Advanced filtering and search capabilities</li>
+                            <li>Responsive design for mobile and desktop</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-category="projects">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=ML+Model" alt="Machine Learning Project">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Predictive Analytics Model</h3>
+                        <p class="card-description">Python-based ML model for data prediction</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Predictive Analytics Model</h4>
+                        <p><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, Matplotlib</p>
+                        <p><strong>Description:</strong> Developed a machine learning model to predict customer behavior and sales trends using historical data.</p>
+                        <p><strong>Achievements:</strong> 92% accuracy rate, reduced prediction time by 40%</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-category="projects">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Mobile+App" alt="Mobile App">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Task Management App</h3>
+                        <p class="card-description">React Native mobile application</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Task Management Mobile App</h4>
+                        <p><strong>Tech Stack:</strong> React Native, Firebase, Redux</p>
+                        <p><strong>Description:</strong> Cross-platform mobile app for task management with real-time synchronization and team collaboration features.</p>
+                        <p><strong>Features:</strong> Offline mode, push notifications, team sharing</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-link"><i class="fab fa-google-play"></i> Play Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="content-row" id="skills">
+            <div class="row-header">
+                <h2 class="row-title">🛠️ Technical Skills</h2>
+                <div class="row-controls">
+                    <button class="scroll-btn scroll-left" onclick="scrollRow('skills', 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" onclick="scrollRow('skills', 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cards-container" id="skills-cards">
+                <div class="card skill-card" data-category="skills">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Frontend" alt="Frontend Development">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Frontend Development</h3>
+                        <p class="card-description">React, Vue.js, HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Frontend Development</h4>
+                        <p><strong>Core Technologies:</strong></p>
+                        <ul>
+                            <li>React.js & Vue.js frameworks</li>
+                            <li>HTML5, CSS3, Sass/SCSS</li>
+                            <li>JavaScript (ES6+), TypeScript</li>
+                            <li>Responsive design & mobile-first approach</li>
+                        </ul>
+                        <p><strong>Experience:</strong> 3+ years building modern web applications</p>
+                    </div>
+                </div>
+                <div class="card skill-card" data-category="skills">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Backend" alt="Backend Development">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Backend Development</h3>
+                        <p class="card-description">Node.js, Python, Java, Database Design</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Backend Development</h4>
+                        <p><strong>Technologies:</strong></p>
+                        <ul>
+                            <li>Node.js & Express.js</li>
+                            <li>Python (Django, Flask)</li>
+                            <li>Java & Spring Boot</li>
+                            <li>RESTful APIs & GraphQL</li>
+                            <li>MongoDB, PostgreSQL, MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card skill-card" data-category="skills">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Data+Science" alt="Data Science">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Data Science & ML</h3>
+                        <p class="card-description">Python, R, TensorFlow, Pandas, Scikit-learn</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Data Science & Machine Learning</h4>
+                        <p><strong>Tools & Libraries:</strong></p>
+                        <ul>
+                            <li>Python: Pandas, NumPy, Matplotlib</li>
+                            <li>Machine Learning: Scikit-learn, TensorFlow</li>
+                            <li>Statistical Analysis: R, SPSS</li>
+                            <li>Data Visualization: D3.js, Plotly, Tableau</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="content-row" id="experience">
+            <div class="row-header">
+                <h2 class="row-title">💼 Experience</h2>
+                <div class="row-controls">
+                    <button class="scroll-btn scroll-left" onclick="scrollRow('experience', 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" onclick="scrollRow('experience', 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cards-container" id="experience-cards">
+                <div class="card" data-category="experience">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Research+Assistant" alt="Research Assistant">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Research Assistant</h3>
+                        <p class="card-description">Clemson University • 2024-Present</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Graduate Research Assistant</h4>
+                        <p><strong>Organization:</strong> Clemson University</p>
+                        <p><strong>Duration:</strong> January 2024 - Present</p>
+                        <p><strong>Responsibilities:</strong></p>
+                        <ul>
+                            <li>Conducting research on machine learning algorithms</li>
+                            <li>Developing data analysis tools and methodologies</li>
+                            <li>Publishing research findings in academic conferences</li>
+                            <li>Mentoring undergraduate students in research projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-category="experience">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Software+Intern" alt="Software Intern">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Software Development Intern</h3>
+                        <p class="card-description">Tech Company • Summer 2023</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Software Development Intern</h4>
+                        <p><strong>Company:</strong> Tech Innovation Inc.</p>
+                        <p><strong>Duration:</strong> June 2023 - August 2023</p>
+                        <p><strong>Achievements:</strong></p>
+                        <ul>
+                            <li>Developed REST APIs serving 10,000+ daily users</li>
+                            <li>Improved application performance by 25%</li>
+                            <li>Collaborated with cross-functional teams using Agile methodology</li>
+                            <li>Implemented automated testing reducing bugs by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="content-row" id="certifications">
+            <div class="row-header">
+                <h2 class="row-title">📜 Certifications</h2>
+                <div class="row-controls">
+                    <button class="scroll-btn scroll-left" onclick="scrollRow('certifications', 'left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right" onclick="scrollRow('certifications', 'right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cards-container" id="certifications-cards">
+                <div class="card" data-category="certifications">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=AWS+Certified" alt="AWS Certification">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">AWS Solutions Architect</h3>
+                        <p class="card-description">Amazon Web Services • 2024</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>AWS Certified Solutions Architect</h4>
+                        <p><strong>Issuing Organization:</strong> Amazon Web Services</p>
+                        <p><strong>Issue Date:</strong> March 2024</p>
+                        <p><strong>Skills Validated:</strong></p>
+                        <ul>
+                            <li>Cloud architecture design and implementation</li>
+                            <li>Cost optimization and security best practices</li>
+                            <li>Scalable and fault-tolerant systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-category="certifications">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Google+Analytics" alt="Google Analytics">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Google Analytics Certified</h3>
+                        <p class="card-description">Google • 2023</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Google Analytics Individual Qualification</h4>
+                        <p><strong>Issuing Organization:</strong> Google</p>
+                        <p><strong>Issue Date:</strong> November 2023</p>
+                        <p><strong>Skills:</strong> Web analytics, data interpretation, reporting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I'm a passionate Computer Science graduate student at Clemson University with a strong foundation in software development and data analysis. My journey in tech started with curiosity about how things work and evolved into a deep appreciation for creating solutions that make a real impact.
+                </p>
+                <p class="about-text">
+                    Currently pursuing my Master's degree, I'm focused on combining my technical skills with analytical thinking to solve complex problems. Whether it's building scalable web applications, developing machine learning models, or analyzing data patterns, I thrive on challenges that push me to learn and grow.
+                </p>
+                <p class="about-text">
+                    When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or planning my next career move in the exciting world of data analytics and software development.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Let's Connect</h3>
+                <div class="social-links">
+                    <a href="mailto:janani@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/jananimukkoti" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/jananimukkoti" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="tel:+1234567890" class="social-link">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav class="footer-nav">
+                    <a href="#education" class="footer-link">Education</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Janani Mukkoti. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
+
+    <!-- Card Modal -->
+    <div class="modal" id="cardModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
