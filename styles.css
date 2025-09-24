@@ -858,3 +858,125 @@ a:focus {
         margin-bottom: 20px;
     }
 }
+
+/* Contact Modal Styles */
+.contact-modal-content {
+    max-width: 400px;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.contact-modal-body h2 {
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    font-size: 1.8rem;
+}
+
+.contact-modal-body p {
+    margin-bottom: 30px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.email-btn {
+    background: var(--netflix-red);
+    color: white;
+}
+
+.email-btn:hover {
+    background: #B20710;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(229, 9, 20, 0.4);
+}
+
+.phone-btn {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: var(--light-gray);
+}
+
+.phone-btn:hover {
+    border-color: var(--netflix-red);
+    color: var(--netflix-red);
+    transform: translateY(-2px);
+}
+
+.contact-additional {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--light-gray);
+}
+
+.contact-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--netflix-red);
+}
+
+/* Modal animation */
+#contactModal {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#contactModal.show {
+    opacity: 1;
+}
+
+#contactModal .contact-modal-content {
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+#contactModal.show .contact-modal-content {
+    transform: translateY(0);
+}
+
+/* Mobile responsiveness for contact modal */
+@media (max-width: 768px) {
+    .contact-modal-content {
+        max-width: 350px;
+        padding: 30px 20px;
+    }
+    
+    .contact-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .contact-modal-body h2 {
+        font-size: 1.5rem;
+    }
+}

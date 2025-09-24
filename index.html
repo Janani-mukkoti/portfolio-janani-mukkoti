@@ -18,7 +18,7 @@
                     <a href="#about" class="nav-link">About</a>
                     <a href="#projects" class="nav-link">Projects</a>
                     <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="javascript:void(0)" onclick="openContactModal()" class="nav-link">Contact</a>
                 </nav>
             </div>
             <div class="nav-right">
@@ -36,7 +36,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Building Tomorrow's Solutions</h1>
+            <h1 class="hero-title">Portfolio Hub</h1>
             <p class="hero-subtitle">Computer Science Master's Student at Clemson University</p>
             <p class="hero-description">Aspiring Data Analyst & Software Developer passionate about turning complex problems into elegant solutions</p>
             <div class="hero-buttons">
@@ -69,35 +69,32 @@
             <div class="cards-container" id="education-cards">
                 <div class="card" data-category="education">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Clemson+University" alt="Clemson University">
+                        <img src="images/clemson-university.jpg" alt="Clemson University - Tillman Hall">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Master's in Computer Science</h3>
-                        <p class="card-description">Clemson University • 2023-2025</p>
+                        <h3 class="card-title">master's in Computer and Information Sciences</h3>
+                        <p class="card-description">Clemson University • Jan 2024 – Present</p>
                     </div>
                     <div class="card-details">
-                        <h4>Master of Science in Computer Science</h4>
-                        <p><strong>Institution:</strong> Clemson University</p>
-                        <p><strong>Duration:</strong> 2023 - 2025 (Expected)</p>
-                        <p><strong>Focus Areas:</strong> Data Science, Machine Learning, Software Engineering</p>
-                        <p><strong>Relevant Coursework:</strong> Advanced Algorithms, Data Mining, Database Systems, Software Engineering</p>
-                        <p><strong>GPA:</strong> 3.8/4.0</p>
+                        <h4>master of Science in Computer and Information Sciences</h4>
+                        <p><strong>Institution:</strong> Clemson University, Clemson, SC</p>
+                        <p><strong>Duration:</strong> January 2024 - Present</p>
+                        <p><strong>Role:</strong> Also serving as Teaching Assistant for Computational Thinking & Computer Science Lab</p>
                     </div>
                 </div>
                 <div class="card" data-category="education">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Bachelor's+Degree" alt="Bachelor's Degree">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="VelTech University">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Bachelor's in Computer Science</h3>
-                        <p class="card-description">Graduated with Honors • 2019-2023</p>
+                        <h3 class="card-title">Bachelor's in Computer Science and Engineering</h3>
+                        <p class="card-description">Vel Tech Institute • Aug 2019 – July 2023</p>
                     </div>
                     <div class="card-details">
-                        <h4>Bachelor of Science in Computer Science</h4>
-                        <p><strong>Duration:</strong> 2019 - 2023</p>
-                        <p><strong>Achievements:</strong> Magna Cum Laude, Dean's List</p>
-                        <p><strong>Core Subjects:</strong> Data Structures, Algorithms, Database Design, Web Development</p>
-                        <p><strong>Final Project:</strong> Developed a machine learning model for predictive analytics</p>
+                        <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                        <p><strong>Institution:</strong> Vel Tech Institute of Science and Technology, Chennai, India</p>
+                        <p><strong>Duration:</strong> August 2019 - July 2023</p>
+                        <p><strong>Degree:</strong> Bachelor of Technology (B.Tech)</p>
                     </div>
                 </div>
             </div>
@@ -119,64 +116,82 @@
             <div class="cards-container" id="projects-cards">
                 <div class="card featured" data-category="projects">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=E-Commerce+Platform" alt="E-Commerce Platform">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Working Patterns ML">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">E-Commerce Analytics Platform</h3>
-                        <p class="card-description">Full-stack application with real-time analytics</p>
+                        <h3 class="card-title">Detecting Working Patterns from Online Workers</h3>
+                        <p class="card-description">End-to-end ML pipeline for Amazon MTurk analysis</p>
                     </div>
                     <div class="card-details">
-                        <h4>E-Commerce Analytics Platform</h4>
-                        <p><strong>Tech Stack:</strong> React, Node.js, MongoDB, D3.js</p>
-                        <p><strong>Description:</strong> Built a comprehensive e-commerce platform with real-time sales analytics, inventory management, and customer insights dashboard.</p>
+                        <h4>Detecting Working Patterns from Online Workers</h4>
+                        <p><strong>Description:</strong> Designed and implemented an end-to-end ML pipeline (EDA, feature engineering, cross-validation) on Amazon MTurk; trained Random Forest (R²=0.847) to predict task time/wages and delivered scheduling insights/KPIs.</p>
                         <p><strong>Key Features:</strong></p>
                         <ul>
-                            <li>Real-time sales tracking and visualization</li>
-                            <li>Machine learning-based product recommendations</li>
-                            <li>Advanced filtering and search capabilities</li>
-                            <li>Responsive design for mobile and desktop</li>
+                            <li>Comprehensive data analysis and feature engineering</li>
+                            <li>Random Forest model with 84.7% R-squared accuracy</li>
+                            <li>Cross-validation and robust model evaluation</li>
+                            <li>Scheduling insights and performance KPIs</li>
                         </ul>
-                        <div class="card-links">
-                            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
                     </div>
                 </div>
                 <div class="card" data-category="projects">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=ML+Model" alt="Machine Learning Project">
+                        <img src="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Movie Recommendation System">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Predictive Analytics Model</h3>
-                        <p class="card-description">Python-based ML model for data prediction</p>
+                        <h3 class="card-title">Movie Recommendation System</h3>
+                        <p class="card-description">Collaborative-filtering engine with Flask backend</p>
                     </div>
                     <div class="card-details">
-                        <h4>Predictive Analytics Model</h4>
-                        <p><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, Matplotlib</p>
-                        <p><strong>Description:</strong> Developed a machine learning model to predict customer behavior and sales trends using historical data.</p>
-                        <p><strong>Achievements:</strong> 92% accuracy rate, reduced prediction time by 40%</p>
-                        <div class="card-links">
-                            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
+                        <h4>Movie Recommendation System</h4>
+                        <p><strong>Description:</strong> Built a collaborative-filtering engine with a Flask backend and responsive UI; achieved 95% precision, optimized queries/latency, and improved UX with autocomplete and caching.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>95% precision collaborative filtering algorithm</li>
+                            <li>Flask backend with optimized query performance</li>
+                            <li>Responsive user interface</li>
+                            <li>Autocomplete and caching for improved UX</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card" data-category="projects">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Mobile+App" alt="Mobile App">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="AI Facial Recognition Technology">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Task Management App</h3>
-                        <p class="card-description">React Native mobile application</p>
+                        <h3 class="card-title">Identifying Missing Persons Using AI</h3>
+                        <p class="card-description">Facial recognition using LBPH/Fisherface</p>
                     </div>
                     <div class="card-details">
-                        <h4>Task Management Mobile App</h4>
-                        <p><strong>Tech Stack:</strong> React Native, Firebase, Redux</p>
-                        <p><strong>Description:</strong> Cross-platform mobile app for task management with real-time synchronization and team collaboration features.</p>
-                        <p><strong>Features:</strong> Offline mode, push notifications, team sharing</p>
-                        <div class="card-links">
-                            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="#" class="btn-link"><i class="fab fa-google-play"></i> Play Store</a>
-                        </div>
+                        <h4>Identifying Missing Persons Using AI</h4>
+                        <p><strong>Description:</strong> Implemented facial recognition using LBPH/Fisherface; optimized preprocessing and evaluation to improve accuracy and reliability in real-world identification.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>LBPH and Fisherface facial recognition algorithms</li>
+                            <li>Optimized preprocessing pipeline</li>
+                            <li>Enhanced accuracy for real-world applications</li>
+                            <li>Reliable identification system</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-category="projects">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Bone Fracture Detection">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Bone Fracture Detection Using Image Processing</h3>
+                        <p class="card-description">Automated X-ray analysis pipeline</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Bone Fracture Detection Using Image Processing</h4>
+                        <p><strong>Description:</strong> Developed an automated X-ray analysis pipeline; improved diagnostic speed/precision via segmentation, feature extraction, and batch processing.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Automated X-ray image analysis</li>
+                            <li>Advanced segmentation and feature extraction</li>
+                            <li>Improved diagnostic speed and precision</li>
+                            <li>Batch processing capabilities</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -198,60 +213,115 @@
             <div class="cards-container" id="skills-cards">
                 <div class="card skill-card" data-category="skills">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Frontend" alt="Frontend Development">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Programming Languages">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Frontend Development</h3>
-                        <p class="card-description">React, Vue.js, HTML5, CSS3, JavaScript</p>
+                        <h3 class="card-title">Programming Languages</h3>
+                        <p class="card-description">Python, Java, C/C++, JavaScript, R, SQL</p>
                     </div>
                     <div class="card-details">
-                        <h4>Frontend Development</h4>
-                        <p><strong>Core Technologies:</strong></p>
+                        <h4>Programming Languages</h4>
+                        <p><strong>Languages:</strong></p>
                         <ul>
-                            <li>React.js & Vue.js frameworks</li>
-                            <li>HTML5, CSS3, Sass/SCSS</li>
-                            <li>JavaScript (ES6+), TypeScript</li>
-                            <li>Responsive design & mobile-first approach</li>
+                            <li>Bash, C, C#, C++, Go</li>
+                            <li>Java, JavaScript/TypeScript</li>
+                            <li>MATLAB, Python, R, SQL</li>
                         </ul>
-                        <p><strong>Experience:</strong> 3+ years building modern web applications</p>
                     </div>
                 </div>
                 <div class="card skill-card" data-category="skills">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Backend" alt="Backend Development">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Web Development">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Backend Development</h3>
-                        <p class="card-description">Node.js, Python, Java, Database Design</p>
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-description">React, Node.js, Flask, REST APIs</p>
                     </div>
                     <div class="card-details">
-                        <h4>Backend Development</h4>
+                        <h4>Web Development</h4>
                         <p><strong>Technologies:</strong></p>
                         <ul>
-                            <li>Node.js & Express.js</li>
-                            <li>Python (Django, Flask)</li>
-                            <li>Java & Spring Boot</li>
-                            <li>RESTful APIs & GraphQL</li>
-                            <li>MongoDB, PostgreSQL, MySQL</li>
+                            <li>HTML, CSS, React</li>
+                            <li>Node.js/Express, Flask/FastAPI</li>
+                            <li>REST APIs, JWT Authentication</li>
+                            <li>Responsive Design, Accessibility</li>
                         </ul>
                     </div>
                 </div>
                 <div class="card skill-card" data-category="skills">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Data+Science" alt="Data Science">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Machine Learning">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Data Science & ML</h3>
-                        <p class="card-description">Python, R, TensorFlow, Pandas, Scikit-learn</p>
+                        <h3 class="card-title">Machine Learning & Data Science</h3>
+                        <p class="card-description">Python, Pandas, Scikit-learn, Power BI</p>
                     </div>
                     <div class="card-details">
-                        <h4>Data Science & Machine Learning</h4>
-                        <p><strong>Tools & Libraries:</strong></p>
+                        <h4>Machine Learning & Data Science</h4>
+                        <p><strong>Technologies & Methods:</strong></p>
                         <ul>
-                            <li>Python: Pandas, NumPy, Matplotlib</li>
-                            <li>Machine Learning: Scikit-learn, TensorFlow</li>
-                            <li>Statistical Analysis: R, SPSS</li>
-                            <li>Data Visualization: D3.js, Plotly, Tableau</li>
+                            <li><strong>ML Algorithms:</strong> Random Forest, Collaborative Filtering</li>
+                            <li><strong>Data Analysis:</strong> EDA, Feature Engineering, Cross-validation</li>
+                            <li><strong>Libraries:</strong> Pandas, Scikit-learn, NumPy</li>
+                            <li><strong>Visualization:</strong> Tableau, Power BI, Matplotlib</li>
+                            <li><strong>Metrics:</strong> R², KPIs, Precision Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card skill-card" data-category="skills">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Computer Vision">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Computer Vision & AI</h3>
+                        <p class="card-description">LBPH, Fisherface, Image Processing</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Computer Vision & AI Technologies</h4>
+                        <p><strong>Algorithms & Techniques:</strong></p>
+                        <ul>
+                            <li><strong>Face Recognition:</strong> LBPH, Fisherface algorithms</li>
+                            <li><strong>Image Processing:</strong> Segmentation, Feature Extraction</li>
+                            <li><strong>Medical Imaging:</strong> X-ray Analysis, Automated Diagnostics</li>
+                            <li><strong>Optimization:</strong> Preprocessing, Batch Processing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card skill-card" data-category="skills">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Database & Cloud">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Database & Cloud Technologies</h3>
+                        <p class="card-description">MySQL, PostgreSQL, AWS, Docker</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Database Systems & Cloud Technologies</h4>
+                        <p><strong>Technologies:</strong></p>
+                        <ul>
+                            <li><strong>Database Systems:</strong> MySQL, PostgreSQL</li>
+                            <li><strong>Database Optimization:</strong> Query Tuning, Indexing, Caching</li>
+                            <li><strong>Cloud & DevOps:</strong> AWS, Docker, CI/CD (GitHub Actions)</li>
+                            <li><strong>Operating Systems:</strong> Linux, macOS, Windows</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card skill-card" data-category="skills">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="UI/UX Design">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">UI/UX Design & Tools</h3>
+                        <p class="card-description">Figma, Wireframing, Prototyping</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>UI/UX Design & Development Tools</h4>
+                        <p><strong>Design & Development:</strong></p>
+                        <ul>
+                            <li><strong>Design Tools:</strong> Figma, Wireframing, Interactive Prototypes</li>
+                            <li><strong>Educational Tools:</strong> Snap!, zyBooks, zyLabs</li>
+                            <li><strong>Version Control:</strong> Git, GitHub</li>
+                            <li><strong>Code Analysis:</strong> Debugging, Error Handling, Testing</li>
                         </ul>
                     </div>
                 </div>
@@ -274,43 +344,60 @@
             <div class="cards-container" id="experience-cards">
                 <div class="card" data-category="experience">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Research+Assistant" alt="Research Assistant">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Teaching Assistant">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Research Assistant</h3>
-                        <p class="card-description">Clemson University • 2024-Present</p>
+                        <h3 class="card-title">Teaching Assistant</h3>
+                        <p class="card-description">Clemson University • Aug 2024 – Present</p>
                     </div>
                     <div class="card-details">
-                        <h4>Graduate Research Assistant</h4>
-                        <p><strong>Organization:</strong> Clemson University</p>
-                        <p><strong>Duration:</strong> January 2024 - Present</p>
+                        <h4>Teaching Assistant — Computational Thinking & Computer Science Lab</h4>
+                        <p><strong>Organization:</strong> Clemson University, Clemson, SC</p>
+                        <p><strong>Duration:</strong> August 2024 - Present</p>
                         <p><strong>Responsibilities:</strong></p>
                         <ul>
-                            <li>Conducting research on machine learning algorithms</li>
-                            <li>Developing data analysis tools and methodologies</li>
-                            <li>Publishing research findings in academic conferences</li>
-                            <li>Mentoring undergraduate students in research projects</li>
+                            <li><strong>Computational Thinking (Snap!):</strong> Led block-based labs covering sequences, loops, conditionals, events, variables/lists, and custom blocks; taught problem decomposition, abstraction, and algorithm design</li>
+                            <li><strong>Computer Science I (C Programming):</strong> Guided students through zyBooks/zyLabs problems; explained test cases; helped interpret compiler/runtime errors; reviewed code covering loops, functions, arrays/strings, pointers, and file I/O</li>
                         </ul>
                     </div>
                 </div>
                 <div class="card" data-category="experience">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Software+Intern" alt="Software Intern">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Web Development Intern">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Software Development Intern</h3>
-                        <p class="card-description">Tech Company • Summer 2023</p>
+                        <h3 class="card-title">Web Development Intern</h3>
+                        <p class="card-description">Corizo • Dec 2022 – Mar 2023</p>
                     </div>
                     <div class="card-details">
-                        <h4>Software Development Intern</h4>
-                        <p><strong>Company:</strong> Tech Innovation Inc.</p>
-                        <p><strong>Duration:</strong> June 2023 - August 2023</p>
+                        <h4>Web Development Intern</h4>
+                        <p><strong>Company:</strong> Corizo, Chennai</p>
+                        <p><strong>Duration:</strong> December 2022 - March 2023</p>
                         <p><strong>Achievements:</strong></p>
                         <ul>
-                            <li>Developed REST APIs serving 10,000+ daily users</li>
-                            <li>Improved application performance by 25%</li>
-                            <li>Collaborated with cross-functional teams using Agile methodology</li>
-                            <li>Implemented automated testing reducing bugs by 40%</li>
+                            <li><strong>UI/UX Design:</strong> Created wireframes & interactive prototypes in Figma and implemented responsive interfaces (HTML/CSS/JavaScript/React) with attention to usability and accessibility</li>
+                            <li><strong>Backend Development:</strong> Designed normalized MySQL schemas and developed REST APIs (Flask/Express) with input validation, authentication (JWT), and robust error handling</li>
+                            <li><strong>Performance Optimization:</strong> Integrated front end with APIs and optimized performance via query tuning, indexing, and caching; debugged end-to-end issues to improve page load and response times</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-category="experience">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Data Analyst Intern">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Data Analyst Intern</h3>
+                        <p class="card-description">Quantium • Jul 2022 - Aug 2022</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>Data Analyst Intern</h4>
+                        <p><strong>Company:</strong> Quantium, Remote</p>
+                        <p><strong>Duration:</strong> July 2022 - August 2022</p>
+                        <p><strong>Responsibilities:</strong></p>
+                        <ul>
+                            <li>Assisted teams in analyzing and visualizing data to support business decision-making</li>
+                            <li>Validated and cleaned large datasets, ensuring accuracy and consistency for predictive modeling</li>
+                            <li>Utilized Python and data visualization tools like Tableau to present insights on product performance and customer segmentation</li>
                         </ul>
                     </div>
                 </div>
@@ -333,54 +420,72 @@
             <div class="cards-container" id="certifications-cards">
                 <div class="card" data-category="certifications">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=AWS+Certified" alt="AWS Certification">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="CISCO CCNA">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">AWS Solutions Architect</h3>
-                        <p class="card-description">Amazon Web Services • 2024</p>
+                        <h3 class="card-title">Introduction to Networks (CCNAv7)</h3>
+                        <p class="card-description">CISCO</p>
                     </div>
                     <div class="card-details">
-                        <h4>AWS Certified Solutions Architect</h4>
-                        <p><strong>Issuing Organization:</strong> Amazon Web Services</p>
-                        <p><strong>Issue Date:</strong> March 2024</p>
+                        <h4>Introduction to Networks (CCNAv7)</h4>
+                        <p><strong>Issuing Organization:</strong> CISCO</p>
                         <p><strong>Skills Validated:</strong></p>
                         <ul>
-                            <li>Cloud architecture design and implementation</li>
-                            <li>Cost optimization and security best practices</li>
-                            <li>Scalable and fault-tolerant systems</li>
+                            <li>Network fundamentals and protocols</li>
+                            <li>Network configuration and troubleshooting</li>
+                            <li>Routing and switching concepts</li>
                         </ul>
                     </div>
                 </div>
                 <div class="card" data-category="certifications">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/300x200/1a1a1a/e50914?text=Google+Analytics" alt="Google Analytics">
+                        <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Web Development">
                     </div>
                     <div class="card-info">
-                        <h3 class="card-title">Google Analytics Certified</h3>
-                        <p class="card-description">Google • 2023</p>
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-description">CORIZO</p>
                     </div>
                     <div class="card-details">
-                        <h4>Google Analytics Individual Qualification</h4>
-                        <p><strong>Issuing Organization:</strong> Google</p>
-                        <p><strong>Issue Date:</strong> November 2023</p>
-                        <p><strong>Skills:</strong> Web analytics, data interpretation, reporting</p>
+                        <h4>Web Development Certificate</h4>
+                        <p><strong>Issuing Organization:</strong> CORIZO</p>
+                        <p><strong>Skills:</strong> Full-stack web development, modern frameworks</p>
+                    </div>
+                </div>
+                <div class="card" data-category="certifications">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="AWS Academy">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">AWS Academy Cloud Foundations</h3>
+                        <p class="card-description">AWS Academy</p>
+                    </div>
+                    <div class="card-details">
+                        <h4>AWS Academy Cloud Foundations</h4>
+                        <p><strong>Issuing Organization:</strong> AWS Academy</p>
+                        <p><strong>Skills Validated:</strong></p>
+                        <ul>
+                            <li>Cloud computing fundamentals</li>
+                            <li>AWS core services and architecture</li>
+                            <li>Cloud security and pricing models</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- About Section -->
         <section class="about-section" id="about">
             <div class="about-content">
                 <h2 class="section-title">About Me</h2>
                 <p class="about-text">
-                    I'm a passionate Computer Science graduate student at Clemson University with a strong foundation in software development and data analysis. My journey in tech started with curiosity about how things work and evolved into a deep appreciation for creating solutions that make a real impact.
+                    I'm a passionate Computer Science graduate student at Clemson University pursuing my master's 🎓 in Computer and Information Sciences. With a strong foundation in software development, machine learning, and data analysis, I bring both academic rigor and practical experience to every project.
                 </p>
                 <p class="about-text">
-                    Currently pursuing my Master's degree, I'm focused on combining my technical skills with analytical thinking to solve complex problems. Whether it's building scalable web applications, developing machine learning models, or analyzing data patterns, I thrive on challenges that push me to learn and grow.
+                    Currently serving as a Teaching Assistant for Computational Thinking and Computer Science Lab, I help students master fundamental programming concepts while continuing to develop my expertise in areas like web development, data analytics, and AI applications. My experience spans from building end-to-end ML pipelines to developing responsive web applications with modern frameworks.
                 </p>
                 <p class="about-text">
-                    When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or planning my next career move in the exciting world of data analytics and software development.
+                    With hands-on experience at companies like Corizo and Quantium, I've developed a unique blend of technical skills in programming languages like Python, Java, JavaScript, and R, along with expertise in cloud technologies, database systems, and machine learning. I'm passionate about leveraging technology to solve real-world problems and create impactful solutions.
                 </p>
             </div>
         </section>
@@ -392,19 +497,15 @@
             <div class="footer-section">
                 <h3>Let's Connect</h3>
                 <div class="social-links">
-                    <a href="mailto:janani@example.com" class="social-link">
+                    <a href="mailto:mukkoti.janani@gmail.com" class="social-link">
                         <i class="fas fa-envelope"></i>
                         <span>Email</span>
                     </a>
-                    <a href="https://linkedin.com/in/jananimukkoti" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/jananimukkoti" class="social-link">
+                    <a href="https://github.com/Janani-mukkoti" class="social-link">
                         <i class="fab fa-github"></i>
                         <span>GitHub</span>
                     </a>
-                    <a href="tel:+1234567890" class="social-link">
+                    <a href="tel:+18642071210" class="social-link">
                         <i class="fas fa-phone"></i>
                         <span>Phone</span>
                     </a>
@@ -431,6 +532,32 @@
             <span class="close-modal">&times;</span>
             <div class="modal-body" id="modalBody">
                 <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content contact-modal-content">
+            <span class="close-modal" onclick="closeContactModal()">&times;</span>
+            <div class="contact-modal-body">
+                <h2>📞 Get In Touch</h2>
+                <p>Let's connect! Choose how you'd like to reach out:</p>
+                <div class="contact-buttons">
+                    <a href="mailto:mukkoti.janani@gmail.com" class="contact-btn email-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send Email</span>
+                    </a>
+                    <a href="tel:+18642071210" class="contact-btn phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Me</span>
+                    </a>
+                </div>
+                <div class="contact-additional">
+                    <a href="https://github.com/Janani-mukkoti" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </div>

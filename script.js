@@ -648,7 +648,49 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+// Contact Modal Functions
+function openContactModal() {
+    const modal = document.getElementById('contactModal');
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    
+    // Add fade-in animation
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+}
+
+function closeContactModal() {
+    const modal = document.getElementById('contactModal');
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+    
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 300);
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('contactModal');
+    if (e.target === modal) {
+        closeContactModal();
+    }
+});
+
+// Close modal with Escape key
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('contactModal');
+        if (modal.style.display === 'block') {
+            closeContactModal();
+        }
+    }
+});
+
 // Export functions for global access
 window.scrollToSection = scrollToSection;
 window.scrollRow = scrollRow;
 window.downloadResume = downloadResume;
+window.openContactModal = openContactModal;
+window.closeContactModal = closeContactModal;
