@@ -4,14 +4,6 @@
 
 A modern, responsive portfolio website showcasing the work and experience of Janani Mukkoti - Computer Science Master's student at Clemson University.
 
-## 🎯 About This Portfolio
-
-This portfolio features:
-- **Education**: Master's in Computer and Information Sciences from Clemson University
-- **Projects**: ML pipelines, web applications, AI systems, and more
-- **Skills**: Full-stack development, data science, machine learning, cloud technologies
-- **Experience**: Teaching Assistant, Web Development Intern, Data Analyst Intern
-
 ## ✨ Features
 
 ### 🎨 Design
@@ -45,23 +37,7 @@ This portfolio features:
 - **🌐 Portfolio Website**: [https://janani-mukkoti.github.io/portfolio-janani-mukkoti/](https://janani-mukkoti.github.io/portfolio-janani-mukkoti/)
 - **📂 GitHub Repository**: [https://github.com/Janani-mukkoti/portfolio-janani-mukkoti](https://github.com/Janani-mukkoti/portfolio-janani-mukkoti)
 
-## 📞 Contact Information
 
-- **Email**: [mukkoti.janani@gmail.com](mailto:mukkoti.janani@gmail.com)
-- **Phone**: [(864) 207-1210](tel:+18642071210)
-- **GitHub**: [Janani-mukkoti](https://github.com/Janani-mukkoti)
-- **Location**: Clemson, SC
-
-## 🎓 Education
-
-**Master of Science in Computer and Information Sciences**  
-Clemson University, Clemson, SC  
-January 2024 - Present  
-*Also serving as Teaching Assistant for Computational Thinking & Computer Science Lab*
-
-**Bachelor of Technology in Computer Science and Engineering**  
-Vel Tech Institute of Science and Technology, Chennai, India  
-August 2019 - July 2023
 
 ## 🔄 Automatic Deployment
 
